@@ -11,7 +11,6 @@
     <modules>
         <module>spring-mongo-rest-api</module>
         <module>sping-hello-world</module>
+        <module>spring-elasticsearch</module>
     </modules>
-
-
 </project>

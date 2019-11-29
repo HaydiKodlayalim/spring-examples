@@ -12,5 +12,6 @@
         <module>spring-mongo-rest-api</module>
         <module>sping-hello-world</module>
         <module>spring-elasticsearch</module>
+        <module>spring-datajpa-postgresql</module>
     </modules>
 </project>

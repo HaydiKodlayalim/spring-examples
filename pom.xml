@@ -13,5 +13,6 @@
         <module>sping-hello-world</module>
         <module>spring-elasticsearch</module>
         <module>spring-datajpa-postgresql</module>
+        <module>spring-boot-api-doc</module>
     </modules>
 </project>

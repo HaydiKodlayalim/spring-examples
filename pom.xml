@@ -16,5 +16,6 @@
         <module>spring-boot-api-doc</module>
         <module>spring-boot-rabbitmq</module>
         <module>spring-boot-dockerization</module>
+        <module>spring-boot-jwt</module>
     </modules>
 </project>

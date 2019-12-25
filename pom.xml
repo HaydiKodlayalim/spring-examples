@@ -17,5 +17,6 @@
         <module>spring-boot-rabbitmq</module>
         <module>spring-boot-dockerization</module>
         <module>spring-boot-jwt</module>
+        <module>spring-boot-aop</module>
     </modules>
 </project>

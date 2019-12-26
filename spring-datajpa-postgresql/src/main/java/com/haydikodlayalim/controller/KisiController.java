@@ -3,6 +3,7 @@ package com.haydikodlayalim.controller;
 import com.haydikodlayalim.dto.KisiDto;
 import com.haydikodlayalim.service.KisiService;
 import java.util.List;
+import javax.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,7 +20,7 @@ public class KisiController {
     private final KisiService kisiService;
 
     @PostMapping
-    public ResponseEntity<KisiDto> kaydet(@RequestBody KisiDto kisiDto) {
+    public ResponseEntity<KisiDto> kaydet(@Valid @RequestBody KisiDto kisiDto) {
         return ResponseEntity.ok(kisiService.save(kisiDto));
     }
 

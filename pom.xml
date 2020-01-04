@@ -18,5 +18,6 @@
         <module>spring-boot-dockerization</module>
         <module>spring-boot-jwt</module>
         <module>spring-boot-aop</module>
+        <module>spring-security-facebook-login</module>
     </modules>
 </project>

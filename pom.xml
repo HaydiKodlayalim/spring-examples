@@ -20,5 +20,6 @@
         <module>spring-boot-aop</module>
         <module>spring-security-facebook-login</module>
         <module>spring-boot-graphql</module>
+        <module>spring-boot-rest-template</module>
     </modules>
 </project>

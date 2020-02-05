@@ -25,5 +25,6 @@
         <module>spring-boot-websocket</module>
         <module>spring-boot-pagination</module>
         <module>spring-boot-events</module>
+        <module>spring-boot-gridfs-fileupload</module>
     </modules>
 </project>

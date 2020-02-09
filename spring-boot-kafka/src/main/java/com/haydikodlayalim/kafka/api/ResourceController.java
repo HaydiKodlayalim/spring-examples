@@ -1,7 +1,9 @@
 package com.haydikodlayalim.kafka.api;
 
 import com.haydikodlayalim.kafka.dto.KMessage;
-import org.springframework.beans.factory.annotation.Autowired;
+import java.util.UUID;
+import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -10,15 +12,16 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/kmessage")
+@RequiredArgsConstructor
 public class ResourceController {
 
-    private static final String topic = "my-first-topic";
+    @Value("${haydikodlayalim.kafka.topic}")
+    private String topic;
 
-    @Autowired
-    private KafkaTemplate<String, KMessage> kafkaTemplate;
+    private final KafkaTemplate<String, KMessage> kafkaTemplate;
 
     @PostMapping
     public void sendMessage(@RequestBody KMessage kMessage) {
-        kafkaTemplate.send(topic, kMessage);
+        kafkaTemplate.send(topic, UUID.randomUUID().toString(), kMessage);
     }
 }

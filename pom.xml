@@ -29,5 +29,6 @@
         <module>spring-boot-gridfs-fileupload</module>
         <module>spring-boot-flyway</module>
         <module>spring-boot-versioning</module>
+        <module>spring-boot-exception-handling</module>
     </modules>
 </project>

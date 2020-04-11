@@ -1,0 +1,14 @@
+# Use postgres/example user/password credentials
+# https://www.postgresql.org/docs/9.4/pgstatstatements.html
+
+version: '3.1'
+services:
+  db:
+    image: postgres
+    restart: always
+    volumes:
+      - ./initdb.sh:/docker-entrypoint-initdb.d/initdb.sh
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: postgres

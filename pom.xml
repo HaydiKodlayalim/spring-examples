@@ -31,5 +31,23 @@
         <module>spring-boot-versioning</module>
         <module>spring-boot-exception-handling</module>
         <module>spring-boot-hazelcast-cache</module>
+        <module>spring-boot-webflux-mongo</module>
     </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>13</source>
+                    <target>13</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

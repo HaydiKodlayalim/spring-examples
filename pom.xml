@@ -32,6 +32,7 @@
         <module>spring-boot-exception-handling</module>
         <module>spring-boot-hazelcast-cache</module>
         <module>spring-boot-webflux-mongo</module>
+        <module>java-lombok</module>
     </modules>
 
     <build>

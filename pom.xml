@@ -33,6 +33,7 @@
         <module>spring-boot-hazelcast-cache</module>
         <module>spring-boot-webflux-mongo</module>
         <module>java-lombok</module>
+        <module>spring-boot-logging</module>
     </modules>
 
     <build>

@@ -1,9 +1,6 @@
 package com.haydikodlayalim.sr.producer;
 
 import com.haydikodlayalim.sr.model.Notification;
-import java.util.Date;
-import java.util.UUID;
-import javax.annotation.PostConstruct;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -18,17 +15,6 @@ public class NotificationProducer {
     @Value("${sr.rabbit.exchange.name}")
     private String exchangeName;
 
-
-    @PostConstruct
-    public void init() {
-        Notification notification = new Notification();
-        notification.setNotificationId(UUID.randomUUID().toString());
-        notification.setCreatedAt(new Date());
-        notification.setMessage("Haydi Kodlayalim platformuna hosgeldiniz");
-        notification.setSeen(Boolean.FALSE);
-
-        sendToQueue(notification);
-    }
 
     @Autowired
     private RabbitTemplate rabbitTemplate;
